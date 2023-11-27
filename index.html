@@ -206,7 +206,7 @@
                 <input name="_replyto" type="email" placeholder="Email" required>
             </div>
             <div class="input-box">
-                <input name="mobile" type="number" placeholder="Mobile Number" required>
+                <input name="mobile" type="text" placeholder="Mobile Number" pattern="^[0-9]+$" required title="Please enter a valid mobile number (digits only)">
                 <input name="subject" type="text" placeholder="Email Subject" required>
             </div>
             <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
