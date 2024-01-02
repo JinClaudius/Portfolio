@@ -21,7 +21,7 @@
 
     <!-- header design -->
     <header class="header">
-        <a href="#" class="logo">My Portfolio</a>
+        <a href="#" data-translate="myPortfolio" class="logo">My Portfolio</a>
 
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
@@ -33,17 +33,21 @@
 
         <div class="bx bx-moon" id="darkMode-icon"></div>
 
+        <div id="darkMode-icon">
+            <div id="languageSwitch" class="language-switch" data-translate="button">FR</div>
+        </div>
+        
         <div class="bx bx-menu" id="menu-icon"></div>
     </header>
 
     <!-- home section design -->
     <section class="home" id="home">
         <div class="home-content">
-            <h3>Hello, I am</h3>
+            <h3 data-translate="welcomeText">Hello, I am</h3>
             <h1>Jean Gouttier</h1>
-            <p> 
-                Currently, I am a student at Epitech, working towards my master’s degree with a specialization in Artificial Intelligence (AI). 
-                For my internship, I aspire to work as a web developer, crafting both aesthetically pleasing and functionally efficient websites or features.</br>
+            <p data-translate="introText"> 
+                Currently, I am a student at Epitech, working towards my master’s degree with a specialization in Artificial Intelligence (AI).
+                For my internship, I aspire to work as a web developer, crafting both aesthetically pleasing and functionally efficient websites or features.
                 My ambition is to advance and excel in the field of artificial intelligence, as I am deeply passionate about this subject.
             </p>
 
@@ -55,18 +59,18 @@
                 <a href="https://github.com/JinClaudius"><i class='bx bxl-github'></i></a>
             </div>
 
-            <a href="https://drive.google.com/file/d/10-bBv5W2YKjXsdPl8Ck4BNmdGXmGywU9/view?usp=sharing" download="GOUTTIER_JEAN_CV.pdf" class="btn">Download CV</a>
+            <a href="https://drive.google.com/file/d/10-bBv5W2YKjXsdPl8Ck4BNmdGXmGywU9/view?usp=sharing" data-translate="downloadCV" download="GOUTTIER_JEAN_CV.pdf" class="btn">Download CV</a>
         </div>
 
         <div class="profession-container">
             <div class="profession-box">
                 <div class="profession" style="--i:0;">
                     <i class='bx bx-code-alt'></i>
-                    <h3>Web Developer</h3>
+                    <h3 data-translate="wheelweb">Web Developer</h3>
                 </div>
                 <div class="profession" style="--i:1;">
                     <i class='bx bx-code-block'></i>
-                    <h3>Future AI Developer</h3>
+                    <h3 data-translate="wheelfutur">Future AI Developer</h3>
                 </div>
                 <div class="profession" style="--i:2;">
                     <i class='bx bx-game'></i>
@@ -74,7 +78,7 @@
                 </div>
                 <div class="profession" style="--i:3;">
                     <i class='bx bx-music'></i>
-                    <h3>Guitarist</h3>
+                    <h3 data-translate="wheelguitar">Guitarist</h3>
                 </div>
 
                 <div class="circle"></div>
@@ -95,44 +99,44 @@
         </div>
 
         <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
-            <h3>
+            <h2 class="heading" data-translate="aboutMe">About <span data-translate="aboutMe2">Me</span></h2>
+            <h3 data-translate="aboutMeText">
                 Hi there, welcome to my portfolio! I'm Jean,
                 a passionate future AI developer who enjoys learning new technologies !
             </h3>
-            <p>
+            <p data-translate="aboutMeText2">
                 This website is my personal portfolio where you can find comprehensive information about my background.
                 I post every project that I have done in Epitech or personal projects.
             </p>
-            <p>
+            <p data-translate="aboutMeText3">
                 Thank you for visiting my portfolio and getting to know me better.
                 I hope you find my portfolio interesting and enjoy reading it.
             </p>
-            <a href="#" class="btn">Read More</a>
+            <a href="#" class="btn" data-translate="aboutMeButton">Read More</a>
         </div>
     </section>
 
     <!-- services section design -->
     <section class="services" id="services">
-        <h2 class="heading">My <span>Services</span></h2>
+        <h2 class="heading" data-translate="servicesTitle">My <span data-translate="servicesTitle2">Services</span></h2>
 
         <div class="services-container">
             <div class="services-box">
                 <i class='bx bx-code-alt'></i>
-                <h3>Web Development</h3>
-                <p>
+                <h3 data-translate="servicesTextTitle">Web Development</h3>
+                <p data-translate="servicesText">
                     I possess a BAC+2 degree in Web Development, specializing as a Web and Mobile Developer.
                     My expertise allows me to excel as a web developer, where I can create visually appealing and highly functional websites or features during my internship.
                     Additionally, I have gained valuable professional experience in web development, having worked for a month at LiveMentor.
                 </p>
-                <a href="#" class="btn">Read More</a>
+                <a href="#" class="btn" data-translate="aboutMeButton">Read More</a>
             </div>
         </div>
     </section>
 
     <!-- portfolio section design -->
     <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Project</span></h2>
+        <h2 class="heading" data-translate="project">Latest <span data-translate="project2">Project</span></h2>
 
         <div class="portfolio-container">
             <div class="portfolio-box">
@@ -140,7 +144,7 @@
 
                 <div class="portfolio-layer">
                     <h4>Tower Sheep</h4>
-                    <p>A tower defense game created with Java, AWT and Swing developped in 7 days</p>
+                    <p data-translate="projectText">A tower defense game created with Java, AWT and Swing developped in 7 days</p>
                     <!-- <a href="#"><i class='bx bx-link-external'></i></a> -->
                 </div>
             </div>
@@ -149,7 +153,7 @@
 
                 <div class="portfolio-layer">
                     <h4>Brag-it</h4>
-                    <p>An imitation of Reddit developped in 2 weeks</p>
+                    <p data-translate="projectText2">An imitation of Reddit developped in 2 weeks</p>
                     <!-- <a href="#"><i class='bx bx-link-external'></i></a> -->
                 </div>
             </div>
@@ -158,7 +162,7 @@
 
                 <div class="portfolio-layer">
                     <h4>ShowTime</h4>
-                    <p>An incredible website to book and pay a ticket for a concert and you receive a QR code</p>
+                    <p data-translate="projectText3">An incredible website to book and pay a ticket for a concert and you receive a QR code</p>
                     <!-- <a href="#"><i class='bx bx-link-external'></i></a> -->
                 </div>
             </div>
@@ -167,7 +171,7 @@
 
                 <div class="portfolio-layer">
                     <h4>Widget board</h4>
-                    <p>A website where every user can display and use differents widgets</p>
+                    <p data-translate="projectText4">A website where every user can display and use differents widgets</p>
                     <!-- <a href="#"><i class='bx bx-link-external'></i></a> -->
                 </div>
             </div>
@@ -176,7 +180,7 @@
 
                 <div class="portfolio-layer">
                     <h4>Trade Hero</h4>
-                    <p>A website with a RPG styled to trade your objects with different users</p>
+                    <p data-translate="projectText5">A website with a RPG styled to trade your objects with different users</p>
                     <!-- <a href="#"><i class='bx bx-link-external'></i></a> -->
                 </div>
             </div>
@@ -185,7 +189,7 @@
 
                 <div class="portfolio-layer">
                     <h4>Smashed tomatoes</h4>
-                    <p>An incredible website who repertories the best of the worst movies</p>
+                    <p data-translate="projectText6">An incredible website who repertories the best of the worst movies</p>
                     <!-- <a href="#"><i class='bx bx-link-external'></i></a> -->
                 </div>
             </div>
@@ -193,8 +197,8 @@
                 <img src="images/portfolio5.jpg" alt="">
 
                 <div class="portfolio-layer">
-                    <h4>Ongoing project</h4>
-                    <p>Coming soon</p>
+                    <h4 data-translate="projectTitle7">Ongoing project</h4>
+                    <p data-translate="projectText7">Coming soon</p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
@@ -202,8 +206,8 @@
                 <img src="images/portfolio6.jpg" alt="">
 
                 <div class="portfolio-layer">
-                    <h4>Next project</h4>
-                    <p>Pending</p>
+                    <h4 data-translate="projectTitle8">Next project</h4>
+                    <p data-translate="projectText8">Pending</p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
@@ -212,26 +216,19 @@
 
     <!-- contact section design -->
     <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me !</span></h2>
-
-        <form action="https://formspree.io/f/xjvqqrek" method="POST">
-            <div class="input-box">
-                <input name="name" type="text" placeholder="Full Name" required>
-                <input name="_replyto" type="email" placeholder="Email" required>
-            </div>
-            <div class="input-box">
-                <input name="mobile" type="text" placeholder="Mobile Number" pattern="^[0-9]+$" required title="Please enter a valid mobile number (digits only)">
-                <input name="subject" type="text" placeholder="Email Subject" required>
-            </div>
-            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-            <input type="submit" value="Send Message" class="btn">
-        </form>        
+        <h2 class="heading" data-translate="contact">Contact <span data-translate="contact2">me !</span></h2>
+        <div data-translate="contact3">
+            <a href="mailto:gouttierjean@gmail.com" class="btncontact">
+                <i class="bx bx-envelope"></i>
+                <p class="email-address">gouttierjean@gmail.com</p>
+            </a>
+        </div>
     </section>
 
     <!-- footer design -->
     <footer class="footer">
         <div class="footer-text">
-            <p>Copyright &copy; 2023 | All Rights Reserved</p>
+            <p data-translate="copyright">Modified by Jean Gouttier<i> | Source: codingstella</i></p>
         </div>
 
         <div class="footer-iconTop">
