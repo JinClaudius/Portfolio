@@ -979,6 +979,8 @@ img {
     font-size: 6rem; /* Adjust icon size */
     transition: .5s ease;
     text-decoration: none;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 
 .btncontact .email-address {

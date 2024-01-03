@@ -180,7 +180,7 @@ const translations = {
         'fr': "moi !"
     },
     'copyright' : {
-        'fr': "Modifié par Jean Gouttier"
+        'fr': "Touts droits réservés"
     }
 
 };
