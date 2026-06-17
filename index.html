@@ -1,249 +1,505 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <meta name="description"
+        content="Portfolio de Jean Gouttier, étudiant Bac+5 en IA appliquée et systèmes d'information. Projets LLM, RAG, NLP, automatisation métier et développement SI.">
 
-    <!-- swiper css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <title>Jean Gouttier | IA appliquée & systèmes d'information</title>
 
-    <!-- box icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    <!-- custom css -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
-    <!-- header design -->
     <header class="header">
-        <a href="#" data-translate="myPortfolio" class="logo">My Portfolio</a>
+        <a href="#home" class="logo">Jean Gouttier</a>
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="active">Accueil</a>
+            <a href="#about">Profil</a>
+            <a href="#skills">Compétences</a>
+            <a href="#projects">Projets</a>
+            <a href="#experience">Expérience</a>
+            <a href="#education">Formation</a>
             <a href="#contact">Contact</a>
         </nav>
 
-        <div class="bx bx-moon" id="darkMode-icon"></div>
-
-        <div id="darkMode-icon">
-            <div id="languageSwitch" class="language-switch" data-translate="button">FR</div>
+        <div class="header-actions">
+            <i class="bx bx-moon" id="theme-toggle" aria-label="Changer le thème"></i>
+            <i class="bx bx-menu" id="menu-icon" aria-label="Ouvrir le menu"></i>
         </div>
-        
-        <div class="bx bx-menu" id="menu-icon"></div>
     </header>
 
-    <!-- home section design -->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3 data-translate="welcomeText">Hello, I am</h3>
-            <h1>Jean Gouttier</h1>
-            <p data-translate="introText"> 
-                Currently, I am a student at Epitech, working towards my master’s degree with a specialization in Artificial Intelligence (AI).
-                For my internship, I aspire to work as a web developer, crafting both aesthetically pleasing and functionally efficient websites or features.
-                My ambition is to advance and excel in the field of artificial intelligence, as I am deeply passionate about this subject.
-            </p>
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">IA appliquée · Systèmes d’information · Automatisation métier</p>
 
-            <div class="social-media">
-                <!-- <a href="#"><i class='bx bxl-facebook'></i></a>
-                <a href="#"><i class='bx bxl-twitter'></i></a>
-                <a href="#"><i class='bx bxl-instagram-alt'></i></a> -->
-                <a href="https://www.linkedin.com/in/jeangouttier/"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/JinClaudius"><i class='bx bxl-github'></i></a>
-            </div>
+                <h1>Développeur SI en transition vers l’IA appliquée.</h1>
 
-            <a href="https://drive.google.com/file/d/10-bBv5W2YKjXsdPl8Ck4BNmdGXmGywU9/view?usp=sharing" data-translate="downloadCV" download="GOUTTIER_JEAN_CV.pdf" class="btn">Download CV</a>
-        </div>
-
-        <div class="profession-container">
-            <div class="profession-box">
-                <div class="profession" style="--i:0;">
-                    <i class='bx bx-code-alt'></i>
-                    <h3 data-translate="wheelweb">Web Developer</h3>
-                </div>
-                <div class="profession" style="--i:1;">
-                    <i class='bx bx-code-block'></i>
-                    <h3 data-translate="wheelfutur">Future AI Developer</h3>
-                </div>
-                <div class="profession" style="--i:2;">
-                    <i class='bx bx-game'></i>
-                    <h3>Gamer</h3>
-                </div>
-                <div class="profession" style="--i:3;">
-                    <i class='bx bx-music'></i>
-                    <h3 data-translate="wheelguitar">Guitarist</h3>
-                </div>
-
-                <div class="circle"></div>
-            </div>
-
-            <div class="overlay"></div>
-        </div>
-
-        <div class="home-img">
-            <img src="images/home.PNG" alt="">
-        </div>
-    </section>
-
-    <!-- about section design -->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="images/about.PNG" alt="">
-        </div>
-
-        <div class="about-content">
-            <h2 class="heading" data-translate="aboutMe">About <span data-translate="aboutMe2">Me</span></h2>
-            <h3 data-translate="aboutMeText">
-                Hi there, welcome to my portfolio! I'm Jean,
-                a passionate future AI developer who enjoys learning new technologies !
-            </h3>
-            <p data-translate="aboutMeText2">
-                This website is my personal portfolio where you can find comprehensive information about my background.
-                I post every project that I have done in Epitech or personal projects.
-            </p>
-            <p data-translate="aboutMeText3">
-                Thank you for visiting my portfolio and getting to know me better.
-                I hope you find my portfolio interesting and enjoy reading it.
-            </p>
-            <a href="#" class="btn" data-translate="aboutMeButton">Read More</a>
-        </div>
-    </section>
-
-    <!-- services section design -->
-    <section class="services" id="services">
-        <h2 class="heading" data-translate="servicesTitle">My <span data-translate="servicesTitle2">Services</span></h2>
-
-        <div class="services-container">
-            <div class="services-box">
-                <i class='bx bx-code-alt'></i>
-                <h3 data-translate="servicesTextTitle">Web Development</h3>
-                <p data-translate="servicesText">
-                    I possess a BAC+2 degree in Web Development, specializing as a Web and Mobile Developer.
-                    My expertise allows me to excel as a web developer, where I can create visually appealing and highly functional websites or features during my internship.
-                    Additionally, I have gained valuable professional experience in web development, having worked for a month at LiveMentor.
+                <p class="hero-description">
+                    Je construis des outils internes, automatise des processus métier et développe aujourd’hui
+                    mes compétences autour des LLM, du RAG et du NLP. Mon objectif : créer des solutions IA
+                    utiles, compréhensibles et réellement exploitables par les équipes.
                 </p>
-                <a href="#" class="btn" data-translate="aboutMeButton">Read More</a>
-            </div>
-        </div>
-    </section>
 
-    <!-- portfolio section design -->
-    <section class="portfolio" id="portfolio">
-        <h2 class="heading" data-translate="project">Latest <span data-translate="project2">Project</span></h2>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+                    <a href="assets/GOUTTIER_Jean_CV.pdf" class="btn btn-secondary" target="_blank">Télécharger mon
+                        CV</a>
+                </div>
 
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="images/towersheep.png" alt="">
-
-                <div class="portfolio-layer">
-                    <h4>Tower Sheep</h4>
-                    <p data-translate="projectText">A tower defense game created with Java, AWT and Swing developped in 7 days</p>
-                    <!-- <a href="#"><i class='bx bx-link-external'></i></a> -->
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/jeangouttier/" target="_blank" aria-label="LinkedIn">
+                        <i class="bx bxl-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/JinClaudius" target="_blank" aria-label="GitHub">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                    <a href="mailto:gouttierjean@gmail.com" aria-label="Email">
+                        <i class="bx bx-envelope"></i>
+                    </a>
                 </div>
             </div>
-            <div class="portfolio-box">
-                <img src="images/bragit.png" alt="">
 
-                <div class="portfolio-layer">
-                    <h4>Brag-it</h4>
-                    <p data-translate="projectText2">An imitation of Reddit developped in 2 weeks</p>
-                    <!-- <a href="#"><i class='bx bx-link-external'></i></a> -->
+            <div class="hero-card">
+                <div class="portrait-wrapper">
+                    <img src="assets/portrait.jpg" alt="Portrait professionnel de Jean Gouttier">
+                </div>
+
+                <div class="hero-info-card">
+                    <span>Recherche</span>
+                    <strong>Poste junior en IA appliquée</strong>
+                    <p>LLM · RAG · NLP · automatisation · systèmes d’information</p>
                 </div>
             </div>
-            <div class="portfolio-box">
-                <img src="images/portfolio3.png" alt="">
+        </section>
 
-                <div class="portfolio-layer">
-                    <h4>ShowTime</h4>
-                    <p data-translate="projectText3">An incredible website to book and pay a ticket for a concert and you receive a QR code</p>
-                    <!-- <a href="#"><i class='bx bx-link-external'></i></a> -->
+        <section class="about section" id="about">
+            <div class="section-header">
+                <p class="eyebrow">Profil</p>
+                <h2>Un profil hybride entre développement, data et besoins métier.</h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        Je suis étudiant en dernière année Bac+5 à Epitech, orienté IA appliquée et systèmes
+                        d’information. Mon parcours combine développement applicatif, automatisation de processus,
+                        exploitation de données et projets académiques en intelligence artificielle.
+                    </p>
+
+                    <p>
+                        Pendant mon alternance chez SUPINFO Paris, j’ai travaillé sur la digitalisation et la
+                        fiabilisation de processus internes : automatisation de plannings pédagogiques, génération
+                        documentaire, exploitation de bases SQL Server, développement d’outils internes et rédaction
+                        de documentation technique.
+                    </p>
+
+                    <p>
+                        Aujourd’hui, je souhaite évoluer vers des missions IA appliquée, notamment autour des LLM,
+                        du RAG, du NLP, des agents IA et de l’automatisation métier.
+                    </p>
+                </div>
+
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <i class="bx bx-brain"></i>
+                        <h3>IA appliquée</h3>
+                        <p>LLM, prompting structuré, bases du RAG, extraction d’informations.</p>
+                    </div>
+
+                    <div class="highlight-card">
+                        <i class="bx bx-data"></i>
+                        <h3>Données & SI</h3>
+                        <p>SQL Server, PostgreSQL, reporting, outils internes, données sensibles.</p>
+                    </div>
+
+                    <div class="highlight-card">
+                        <i class="bx bx-cog"></i>
+                        <h3>Automatisation</h3>
+                        <p>Excel/VBA, PowerShell, génération documentaire, fiabilisation de processus.</p>
+                    </div>
                 </div>
             </div>
-            <div class="portfolio-box">
-                <img src="images/portfolio4.png" alt="">
+        </section>
 
-                <div class="portfolio-layer">
-                    <h4>Widget board</h4>
-                    <p data-translate="projectText4">A website where every user can display and use differents widgets</p>
-                    <!-- <a href="#"><i class='bx bx-link-external'></i></a> -->
+        <section class="skills section" id="skills">
+            <div class="section-header">
+                <p class="eyebrow">Compétences</p>
+                <h2>Un socle technique orienté IA appliquée, automatisation et systèmes d’information.</h2>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>IA appliquée</h3>
+                    <p>
+                        Utilisation de modèles IA comme briques produit : extraction, structuration,
+                        analyse documentaire et préparation de sorties exploitables.
+                    </p>
+                    <div class="skill-tags">
+                        <span>LLM</span>
+                        <span>Prompting structuré</span>
+                        <span>Bases du RAG</span>
+                        <span>Agents IA</span>
+                        <span>JSON structuré</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3>NLP & data</h3>
+                    <p>
+                        Traitement de données textuelles et tabulaires, extraction d’entités,
+                        annotation et évaluation de résultats par métriques.
+                    </p>
+                    <div class="skill-tags">
+                        <span>NLP</span>
+                        <span>Extraction d’entités</span>
+                        <span>Annotation</span>
+                        <span>pandas</span>
+                        <span>Métriques</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Développement</h3>
+                    <p>
+                        Développement d’APIs, d’outils internes et d’applications métiers
+                        connectées à des données structurées.
+                    </p>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>FastAPI</span>
+                        <span>C# / WPF</span>
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>APIs REST</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Données & automatisation</h3>
+                    <p>
+                        Automatisation de processus internes, reporting, génération documentaire
+                        et exploitation de bases de données.
+                    </p>
+                    <div class="skill-tags">
+                        <span>SQL Server</span>
+                        <span>PostgreSQL</span>
+                        <span>Excel/VBA</span>
+                        <span>PowerShell</span>
+                        <span>Supabase</span>
+                    </div>
+                </div>
+
+                <div class="skill-card wide">
+                    <h3>Méthodologie</h3>
+                    <p>
+                        Analyse des besoins, vulgarisation technique, documentation, tests,
+                        fiabilisation de processus et accompagnement d’utilisateurs non techniques.
+                    </p>
+                    <div class="skill-tags">
+                        <span>Analyse métier</span>
+                        <span>Cahier des charges</span>
+                        <span>Documentation</span>
+                        <span>Vulgarisation</span>
+                        <span>Tests</span>
+                    </div>
                 </div>
             </div>
-            <div class="portfolio-box">
-                <img src="images/portfolio7.png" alt="">
+        </section>
 
-                <div class="portfolio-layer">
-                    <h4>Trade Hero</h4>
-                    <p data-translate="projectText5">A website with a RPG styled to trade your objects with different users</p>
-                    <!-- <a href="#"><i class='bx bx-link-external'></i></a> -->
+        <section class="projects section" id="projects">
+            <div class="section-header">
+                <p class="eyebrow">Projets</p>
+                <h2>Projets IA & data</h2>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card featured">
+                    <div class="project-icon">
+                        <i class="bx bx-file-find"></i>
+                    </div>
+
+                    <div class="project-content">
+                        <span class="project-tag">Projet personnel · En cours</span>
+                        <h3>VerifDoc — API d’analyse documentaire IA</h3>
+                        <p>
+                            API visant à analyser des attestations, identifier le type de document, extraire des
+                            informations clés et détecter des anomalies simples. Conception d’une sortie JSON
+                            structurée et préparation d’une intégration LLM par prompting structuré.
+                        </p>
+
+                        <div class="tech-list">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>LLM</span>
+                            <span>JSON</span>
+                            <span>Git</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">
+                        <i class="bx bx-train"></i>
+                    </div>
+
+                    <div class="project-content">
+                        <span class="project-tag">Projet académique · NLP</span>
+                        <h3>Travel Order Resolver</h3>
+                        <p>
+                            Projet de traitement du langage naturel visant à interpréter des demandes de trajet
+                            en français. Extraction du départ et de la destination, détection des demandes invalides,
+                            gestion de formulations ambiguës et préparation d’un module de recherche d’itinéraire.
+                        </p>
+
+                        <div class="tech-list">
+                            <span>Python</span>
+                            <span>NLP</span>
+                            <span>Extraction d’entités</span>
+                            <span>Données SNCF</span>
+                            <span>Métriques</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">
+                        <i class="bx bx-plus-medical"></i>
+                    </div>
+
+                    <div class="project-content">
+                        <span class="project-tag">Projet académique · Deep learning</span>
+                        <h3>PneumonIA</h3>
+                        <p>
+                            Classification de radiographies thoraciques avec comparaison de modèles de machine
+                            learning et deep learning. Utilisation de modèles de baseline, EfficientNet et
+                            visualisations Grad-CAM pour interpréter les zones importantes des images.
+                        </p>
+
+                        <div class="tech-list">
+                            <span>Python</span>
+                            <span>TensorFlow/Keras</span>
+                            <span>scikit-learn</span>
+                            <span>PCA</span>
+                            <span>Grad-CAM</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="section-header secondary-header">
+                <p class="eyebrow">Systèmes d’information</p>
+                <h2>Projets internes & automatisation</h2>
+            </div>
+
+            <div class="projects-grid small-projects">
+                <article class="project-card">
+                    <div class="project-icon">
+                        <i class="bx bx-data"></i>
+                    </div>
+
+                    <div class="project-content">
+                        <h3>Campus Booster</h3>
+                        <p>
+                            Reprise d’une base SQL Server historique et développement d’une application C#/WPF
+                            pour rechercher des étudiants et consulter leurs informations académiques.
+                        </p>
+
+                        <div class="tech-list">
+                            <span>C#</span>
+                            <span>WPF</span>
+                            <span>SQL Server</span>
+                            <span>SSMS</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">
+                        <i class="bx bx-id-card"></i>
+                    </div>
+
+                    <div class="project-content">
+                        <h3>CVthèque</h3>
+                        <p>
+                            Plateforme permettant aux étudiants de créer leur profil, ajouter leur CV, compétences
+                            et disponibilité, avec validation administrateur et consultation par les entreprises.
+                        </p>
+
+                        <div class="tech-list">
+                            <span>React</span>
+                            <span>Vite</span>
+                            <span>Supabase</span>
+                            <span>PostgreSQL</span>
+                            <span>RLS</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">
+                        <i class="bx bx-group"></i>
+                    </div>
+
+                    <div class="project-content">
+                        <h3>TOROSS</h3>
+                        <p>
+                            Application interne de suivi du recrutement des intervenants : candidatures, statuts,
+                            commentaires, rôles utilisateurs et historique des actions.
+                        </p>
+
+                        <div class="tech-list">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>PostgreSQL</span>
+                            <span>API REST</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="experience section" id="experience">
+            <div class="section-header">
+                <p class="eyebrow">Parcours</p>
+                <h2>Expériences professionnelles</h2>
+            </div>
+
+            <div class="timeline">
+                <article class="timeline-item">
+                    <div class="timeline-date">2024 — Aujourd’hui</div>
+
+                    <div class="timeline-content">
+                        <h3>Assistant SI — Développement informatique</h3>
+                        <p class="company">SUPINFO Paris · Alternance</p>
+
+                        <ul>
+                            <li>Digitalisation, automatisation et fiabilisation de processus internes liés à la
+                                pédagogie, l’administration et la gestion des données du campus.</li>
+                            <li>Conception et amélioration d’outils Excel/VBA pour automatiser les plannings
+                                pédagogiques, les modules, les intervenants et les bilans de cours.</li>
+                            <li>Mise en place de processus de génération documentaire à partir de modèles Word, Excel et
+                                scripts PowerShell.</li>
+                            <li>Reprise et analyse d’une base SQL Server historique contenant des données académiques
+                                sensibles.</li>
+                            <li>Développement d’outils internes en C#/WPF, React, Node.js et PostgreSQL.</li>
+                            <li>Rédaction de procédures techniques et documentation pour faciliter la maintenance et
+                                l’autonomie des utilisateurs.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-date">Juin 2023</div>
+
+                    <div class="timeline-content">
+                        <h3>Développeur Web stagiaire</h3>
+                        <p class="company">LiveMentor · Paris 11e</p>
+
+                        <ul>
+                            <li>Développement d’une fonctionnalité de filtrage et de tri pour faciliter l’exploitation
+                                d’un tableau utilisateurs.</li>
+                            <li>Compréhension d’un besoin métier et intégration d’une solution dans un environnement
+                                Ruby existant.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-date">2021 — 2022</div>
+
+                    <div class="timeline-content">
+                        <h3>Réceptionnaire en alternance</h3>
+                        <p class="company">Mercedes-Benz · Saint-Denis</p>
+
+                        <ul>
+                            <li>Relation client, coordination interne et suivi administratif de dossiers.</li>
+                            <li>Expérience terrain dans la communication avec des profils non techniques et la gestion
+                                de processus opérationnels.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="education section" id="education">
+            <div class="section-header">
+                <p class="eyebrow">Formation</p>
+                <h2>Formation en IA, systèmes d’information et développement applicatif.</h2>
+            </div>
+
+            <div class="education-grid">
+                <article class="education-card main-education">
+                    <span class="education-date">2023 — 2026</span>
+                    <h3>Architecte de Systèmes d’Information</h3>
+                    <p class="education-school">Epitech — Spécialisation IA / systèmes d’information</p>
+                    <p>
+                        Formation Bac+5 orientée conception de systèmes d’information, développement,
+                        intelligence artificielle, analyse des besoins, architecture applicative et projets techniques.
+                    </p>
+                </article>
+
+                <article class="education-card">
+                    <span class="education-date">2023</span>
+                    <h3>Concepteur et Développeur Web/Mobile</h3>
+                    <p class="education-school">Epitech</p>
+                </article>
+
+                <article class="education-card">
+                    <span class="education-date">2023</span>
+                    <h3>Développeur Intégrateur Web</h3>
+                    <p class="education-school">Epitech</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="contact-card">
+                <p class="eyebrow">Contact</p>
+                <h2>Discutons d’un projet ou d’une opportunité.</h2>
+
+                <p>
+                    Je recherche une première opportunité en IA appliquée ou systèmes d’information,
+                    avec une forte dimension métier : analyse des besoins, automatisation, données,
+                    documentation et intégration de solutions IA concrètes.
+                </p>
+
+                <div class="contact-actions">
+                    <a href="mailto:gouttierjean@gmail.com" class="btn btn-primary">
+                        <i class="bx bx-envelope"></i>
+                        Me contacter
+                    </a>
+
+                    <a href="assets/GOUTTIER_Jean_CV.pdf" class="btn btn-secondary" target="_blank">
+                        Télécharger mon CV
+                    </a>
+                </div>
+
+                <div class="contact-links">
+                    <a href="mailto:gouttierjean@gmail.com">gouttierjean@gmail.com</a>
+                    <a href="https://www.linkedin.com/in/jeangouttier/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/JinClaudius" target="_blank">GitHub</a>
                 </div>
             </div>
-            <div class="portfolio-box">
-                <img src="images/portfolio8.png" alt="">
+        </section>
+    </main>
 
-                <div class="portfolio-layer">
-                    <h4>Smashed tomatoes</h4>
-                    <p data-translate="projectText6">An incredible website who repertories the best of the worst movies</p>
-                    <!-- <a href="#"><i class='bx bx-link-external'></i></a> -->
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="images/portfolio5.jpg" alt="">
-
-                <div class="portfolio-layer">
-                    <h4 data-translate="projectTitle7">Ongoing project</h4>
-                    <p data-translate="projectText7">Coming soon</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="images/portfolio6.jpg" alt="">
-
-                <div class="portfolio-layer">
-                    <h4 data-translate="projectTitle8">Next project</h4>
-                    <p data-translate="projectText8">Pending</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- contact section design -->
-    <section class="contact" id="contact">
-        <h2 class="heading" data-translate="contact">Contact <span data-translate="contact2">me !</span></h2>
-        <div data-translate="contact3">
-            <a href="mailto:gouttierjean@gmail.com" class="btncontact">
-                <i class="bx bx-envelope"></i>
-                <p class="email-address">gouttierjean@gmail.com</p>
-            </a>
-        </div>
-    </section>
-
-    <!-- footer design -->
     <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2024 | <i data-translate="copyright">All Rights Reserved</i></p>
-        </div>
+        <p>© 2026 Jean Gouttier. Tous droits réservés.</p>
 
-        <div class="footer-iconTop">
-            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
-        </div>
+        <a href="#home" class="back-to-top" aria-label="Retour en haut">
+            <i class="bx bx-up-arrow-alt"></i>
+        </a>
     </footer>
 
-
-    <!-- scroll reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- swiper js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-    <!-- custom js -->
     <script src="js/script.js"></script>
 </body>
 
