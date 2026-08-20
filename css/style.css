@@ -520,6 +520,24 @@ span {
     font-weight: 700;
 }
 
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 1.6rem;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--muted-color);
+}
+
+.project-link i {
+    font-size: 1.6rem;
+}
+
+.project-link:hover {
+    color: var(--main-color);
+}
+
 /* EXPERIENCE */
 
 .timeline {
