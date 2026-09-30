@@ -91,7 +91,7 @@
                     <p>
                         Ingénieur diplômé d’Epitech en septembre 2026 (Bac+5, Architecte de Systèmes
                         d’Information, spécialisation Intelligence Artificielle), après près de trois ans
-                        d’alternance en environnement de production.
+                        d’alternance en environnement de production. Disponible immédiatement.
                     </p>
 
                     <p>
@@ -248,50 +248,65 @@
             <div class="projects-grid">
                 <article class="project-card">
                     <div class="project-icon">
-                        <i class="bx bx-file-find"></i>
+                        <i class="bx bxs-plane-alt"></i>
                     </div>
 
                     <div class="project-content">
-                        <span class="project-tag">Projet personnel · En cours</span>
-                        <h3>VerifDoc - API d’analyse documentaire IA</h3>
+                        <span class="project-tag">Projet de fin d’études · Équipe</span>
+                        <h3>BagTrip - Planification de voyage par agents IA</h3>
                         <p>
-                            API visant à analyser des attestations, identifier le type de document, extraire des
-                            informations clés et détecter des anomalies simples. Conception d’une sortie JSON
-                            structurée et intégration LLM par prompting contraint avec schéma de sortie JSON
-                            structuré.
+                            Application de planification de voyage complète à partir d’un simple prompt :
+                            destinations, vols, hébergements, activités, bagages et budget. J’ai été chef de
+                            projet d’une équipe de cinq et j’ai piloté la partie IA. J’ai prototypé
+                            l’orchestration sous n8n avant de décider de l’abandonner au profit d’une
+                            implémentation Python, pour le contrôle des erreurs et la testabilité.
+                            L’implémentation finale a été portée par deux développeurs de l’équipe.
+                            Architecture retenue : pipeline multi-agents en streaming SSE, exécuteur ReAct pour
+                            un modèle sans function calling natif, recommandation par embeddings où la
+                            destination est verrouillée côté code pour empêcher toute hallucination.
                         </p>
 
                         <div class="tech-list">
+                            <span>Chef de projet</span>
+                            <span>n8n</span>
                             <span>Python</span>
                             <span>FastAPI</span>
-                            <span>LLM</span>
-                            <span>JSON</span>
-                            <span>Git</span>
+                            <span>Flutter</span>
                         </div>
+
+                        <a href="https://github.com/ESP-BagTrip/T-ESP-901-PAR_BagTrip" target="_blank" class="project-link">
+                            <i class="bx bxl-github"></i> Voir le code
+                        </a>
                     </div>
                 </article>
 
                 <article class="project-card">
                     <div class="project-icon">
-                        <i class="bx bx-train"></i>
+                        <i class="bx bx-conversation"></i>
                     </div>
 
                     <div class="project-content">
-                        <span class="project-tag">Projet académique · NLP</span>
-                        <h3>Travel Order Resolver</h3>
+                        <span class="project-tag">Projet personnel</span>
+                        <h3>Chatbot conversationnel avec gestion de contexte</h3>
                         <p>
-                            Projet de traitement du langage naturel visant à interpréter des demandes de trajet
-                            en français. Extraction du départ et de la destination, détection des demandes invalides,
-                            gestion de formulations ambiguës et préparation d’un module de recherche d’itinéraire.
+                            Chat en ligne de commande sur un LLM local, avec streaming token par token. La
+                            partie intéressante n’est pas l’appel au modèle mais ce qui casse autour : cohérence
+                            de l’historique quand le streaming échoue en cours de réponse, gestion de la fenêtre
+                            de contexte par comptage de tokens plutôt que de messages, et mémoire à deux niveaux
+                            avec résumé de conversation et faits durables persistés séparément, tous deux
+                            plafonnés pour éviter une croissance non bornée.
                         </p>
 
                         <div class="tech-list">
                             <span>Python</span>
-                            <span>NLP</span>
-                            <span>Extraction d’entités</span>
-                            <span>Données SNCF</span>
-                            <span>Métriques</span>
+                            <span>Ollama</span>
+                            <span>LLM local</span>
+                            <span>Streaming</span>
                         </div>
+
+                        <a href="https://github.com/JinClaudius/AI-Chat" target="_blank" class="project-link">
+                            <i class="bx bxl-github"></i> Voir le code
+                        </a>
                     </div>
                 </article>
 
@@ -321,6 +336,55 @@
                         <a href="https://github.com/JinClaudius/PneumonIA" target="_blank" class="project-link">
                             <i class="bx bxl-github"></i> Voir le code
                         </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">
+                        <i class="bx bx-train"></i>
+                    </div>
+
+                    <div class="project-content">
+                        <span class="project-tag">Projet académique · NLP</span>
+                        <h3>Travel Order Resolver</h3>
+                        <p>
+                            Projet de traitement du langage naturel visant à interpréter des demandes de trajet
+                            en français. Extraction du départ et de la destination, détection des demandes invalides,
+                            gestion de formulations ambiguës et préparation d’un module de recherche d’itinéraire.
+                        </p>
+
+                        <div class="tech-list">
+                            <span>Python</span>
+                            <span>NLP</span>
+                            <span>Extraction d’entités</span>
+                            <span>Données SNCF</span>
+                            <span>Métriques</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">
+                        <i class="bx bx-file-find"></i>
+                    </div>
+
+                    <div class="project-content">
+                        <span class="project-tag">Projet personnel · En cours</span>
+                        <h3>VerifDoc - API d’analyse documentaire IA</h3>
+                        <p>
+                            API visant à analyser des attestations, identifier le type de document, extraire des
+                            informations clés et détecter des anomalies simples. Conception d’une sortie JSON
+                            structurée et intégration LLM par prompting contraint avec schéma de sortie JSON
+                            structuré.
+                        </p>
+
+                        <div class="tech-list">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>LLM</span>
+                            <span>JSON</span>
+                            <span>Git</span>
+                        </div>
                     </div>
                 </article>
             </div>
